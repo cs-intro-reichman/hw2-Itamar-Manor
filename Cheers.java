@@ -15,7 +15,7 @@ public class Cheers {
                 int times = Integer.parseInt(args[1]);
 
                 for (int i = 0; i < input.length(); i++) {
-                        char c = input.charAt(i);
+                        char c = input.toUpperCase().charAt(i);
                         System.out.printf("Give me %s %c: %c!\n", getPrefix(c), c, c);
                 }
 
