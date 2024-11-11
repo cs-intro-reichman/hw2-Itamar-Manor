@@ -11,11 +11,11 @@ public class Cheers {
         };
 
         public static void main(String[] args) {
-                String input = args[0];
+                String input = args[0].toUpperCase();
                 int times = Integer.parseInt(args[1]);
 
                 for (int i = 0; i < input.length(); i++) {
-                        char c = input.toUpperCase().charAt(i);
+                        char c = input.charAt(i);
                         System.out.printf("Give me %s %c: %c!\n", getPrefix(c), c, c);
                 }
 
